@@ -1,0 +1,151 @@
+/* Estilos gerais */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #4f74c4, #6ed3cf);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #000;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  margin: 20px 0;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.quiz {
+  margin-top: 20px;
+}
+
+.question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 1.1rem;
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: #000;
+}
+
+.options button:hover {
+  background-color: #bdc3c7;
+  transform: scale(1.02);
+}
+
+.result {
+  margin-top: 40px;
+}
+
+.result p {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.character-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#restart-button {
+  margin-top: 30px;
+  background-color: #e74c3c;
+}
+
+#restart-button:hover {
+  background-color: #c0392b;
+}
+
+/* Efeitos de animação */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  button {
+      font-size: 1rem;
+      padding: 10px 20px;
+  }
+
+  .question {
+      font-size: 1.3rem;
+  }
+
+  .options button {
+      font-size: 1rem;
+  }
+
+  .result h2 {
+      font-size: 1.7rem;
+  }
+
+  .character-image {
+      max-width: 300px;
+  }
+}
